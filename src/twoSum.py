@@ -9,8 +9,8 @@ def twoSum(self, nums, target):
     :type target: int
     :rtype: List[int]
     """
-    if nums[0]+nums[1]:
+    if nums[0]+nums[1] == target:
         return [0,1]
     else:
-        self.twoSum(self, nums+1, target)
+        self.twoSum(nums+1, target)
             
