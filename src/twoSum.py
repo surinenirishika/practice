@@ -3,16 +3,14 @@ Created on Oct 26, 2021
 
 @author: rishikasurineni
 '''
-
-        
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i]+nums[j] == target:
-                    return [i,j]
+def twoSum(self, nums, target):
+    """
+    :type nums: List[int]
+    :type target: int
+    :rtype: List[int]
+    """
+    if nums[0]+nums[1]:
+        return [0,1]
+    else:
+        self.twoSum(self, nums+1, target)
+            
