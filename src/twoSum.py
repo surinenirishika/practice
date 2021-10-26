@@ -9,8 +9,12 @@ def twoSum(self, nums, target):
     :type target: int
     :rtype: List[int]
     """
-    if nums[0]+nums[1] == target:
-        return [0,1]
-    else:
-        self.twoSum(nums+1, target)
+    
+    
+    def helper(nums,target,i,j):
+        for i,j in nums[i],nums[i+1]:
+            if nums[i]+nums[j] == target:
+                return [i,j]
+        else:
+            helper(nums, target, i+1,j)
             
